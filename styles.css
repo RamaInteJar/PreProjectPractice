@@ -11,9 +11,8 @@ body {
   padding: 40px;
   background-color: #4b4d4b;
   columns: #222;
-  display: grid;
   text-align: center;
-  color: rgb(84, 63, 9);
+  color: #543f09;
 }
 
 #pokedex {
