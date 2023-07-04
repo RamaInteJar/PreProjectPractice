@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;700;800;900&family=Yatra+One&display=swap");
+
+body {
+  background-color: #000000;
+  font-family: "Yatra one";
+  margin: 0;
+}
+
+.card {
+  list-style: none;
+  padding: 40px;
+  background-color: #4b4d4b;
+  columns: #222;
+  display: grid;
+  text-align: center;
+  color: rgb(84, 63, 9);
+}
+
+#pokedex {
+  padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.card-subtitle {
+  font-weight: lighter;
+  margin-top: 5px;
+}
+
+.card-img {
+  margin: 0 auto;
+  height: 180px;
+  width: 200px;
+}
