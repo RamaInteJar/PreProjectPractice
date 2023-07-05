@@ -3,7 +3,7 @@ console.log(pokedex);
 
 const fetchPokemon = () => {
     const promises = [];
-    for(let i = 1; i <= 150; i++){
+    for(let i = 1; i <= 20; i++){
         //Fecth url(request)
         const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
         //Promise convert request to response and get the body of that response
