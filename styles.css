@@ -1,58 +1,90 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;700;800;900&family=Yatra+One&display=swap");
 
 body {
-  background-color: #f00808;
+  background-color:aliceblue;
   font-family: "Yatra one";
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  animation: mybackground infinite;
+  animation-duration: 15s;
 }
 
-nav{
-    background-color: #543f09;
-    width: 100vw;
-    height: 68px;
-    padding: 30px;
+@keyframes mybackground {
+    from{background-color: aliceblue;}
+    to{background-color: black;}
+}
+
+
+
+header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #2ddf5c;
+  margin-bottom: 32px;
+  z-index: 5px;
+  padding-bottom: 12px;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0 24px 0 0;
+    display: flex; 
+    gap: 32px;
+    font-size: 32px;
+    justify-content:flex-end;
+  }
+
+nav a{
+ text-decoration: none;
+
 }
 
 h1 {
   color: aliceblue;
   text-align: center;
   font-size: 45px;
-}
-.card:hover{
-    animation: bounce 0.6s linear;
+  animation: mycolor infinite;
+  animation-duration: 15s;
 }
 
-@keyframes bounce {
-    20%{
-        transform: translateY(-12px);
-    }
-    40%{
-        transform: translateY(0px);
-    }
-    60%{
-        transform: translateY(-4px);
-    }
-    80%{
-        transform: translateY(0px);
-    }
+@keyframes mycolor {
+    from{color: black;}
+    to{color: aliceblue;}
     
 }
 
 .card {
   list-style: none;
   padding: 40px;
-  background-color: #3b69de;
+  background-color:#75b6ef;
   columns: #222;
   text-align: center;
   color: #543f09;
   border-radius: 12px;
+  animation: backgroundfun infinite;
+  animation-duration: 15s;
 }
+
+@keyframes backgroundfun {
+    from{background-color: #75b6ef;}
+    to{background-color: orange;}
+}
+
+
+
+.card:hover {
+    background-color: orange;
+    cursor: pointer;
+  }
 
 #pokedex {
   padding-inline-start: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(360px, 3fr));
   grid-gap: 20px;
 }
 
