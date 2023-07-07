@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="app.js"></script>
-    <link rel="stylesheet" href="main.css" />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="pokélist.css" />
     <title>PokéDex Project</title>
   </head>
   <body>
@@ -12,16 +12,18 @@
       <nav>
         <ul>
           <li class="main-nav__item">
-            <a href="index.html">Poké Slide</a>
+            <a href="../index.html">Poké Slide</a>
           </li>
           <li class="main-nav__item">
-            <a href="PokéList/index.html">Poké List</a>
+            <a href="index.html">Poké List</a>
           </li>
         </ul>
       </nav>
     </header>
-    <div class="container">
-      <h1>QUICK'S POKEDEX</h1>
+    <div class="carousel">
+      <button class="carousel-btn prev">&#8656;</button>
+      <button class="carousel-btn next">&#8658;</button>
+      <h1>POKEDEX</h1>
       <ol id="pokedex"></ol>
     </div>
   </body>
