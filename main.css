@@ -52,6 +52,7 @@ nav a {
   position: relative;
   text-align: center;
   color: #543f09;
+  border-radius: 15px;
 }
 
 .slide{
@@ -152,7 +153,7 @@ nav a {
 
   body{
     text-align: center;
-    position: relative;
+    
   }
 
   
@@ -172,10 +173,10 @@ nav a {
   .carousel-title{
     transform: translateY(1200%);
   }
-  
-  .carousel{
-    margin-top: 10px;
-    padding-top: 0;
+
+
+  .carousel-img{
+    right: 30px;
   }
 
   body{
