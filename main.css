@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: aliceblue;
+  background-color: #6106f3cb;
   font-family: "Yatra one";
   margin: 0;
 }
@@ -40,6 +40,7 @@ nav a {
   font-size: 45px;
   animation: mycolor infinite;
   animation-duration: 15s;
+  padding-top: 60px;
 } 
 
 .carousel {
@@ -51,7 +52,6 @@ nav a {
   position: relative;
   text-align: center;
   color: #543f09;
-  top: 8rem;
 }
 
 .slide{
@@ -99,8 +99,6 @@ nav a {
   right: 1rem;
 }
 
-
-
   header > ul{
     margin: 0;
     padding: 0;
@@ -109,38 +107,16 @@ nav a {
 
 
 
-.carousel-elements {
-  text-transform: uppercase;
-  font-size: 24px;
-  font-weight: normal;
-  margin-bottom: 0;
-  background-color: rgb(8, 8, 7);
-  position: relative;
-  height: 500px;
-  width: 500px;
-  position: absolute;
-  top: 6%;
-  left: 30%;
-  border-radius: 12px;
-}
-
 .carousel-img {
   margin: auto;
   height: 400px;
-  width: 400px;
+  width: 600px;
   background-color: orange;
   border-radius: 12px;
   position: absolute;
-  top: 9%;
-  right: 9%;
-  animation: fadeIn 7s infinite ease-in-out;
-}
-
-@keyframes fadeIn {
-  0%{opacity:   0;}
-  25%{opacity: 0.2;}
-  25%{opacity: 0.3;}
-  50%{opacity: 0.5;}
+  top: 19%;
+  right: 25%;
+  
 }
 
 .carousel-title {
@@ -148,7 +124,8 @@ nav a {
   margin-top: 5px;
   font-size: 32px;
   text-align: center;
-  transform: translateY(950%);
+  transform: translateY(1140%);
+  
 } 
 
 .carousel-subtitle {
@@ -156,149 +133,53 @@ nav a {
   margin-top: 5px;
   font-size: 32px;
   text-align: center;
-  transform: translateY(900%);
+  transform: translateY(1090%);
 } 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;700;800;900&family=Yatra+One&display=swap");
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: aliceblue;
-  font-family: "Yatra one";
-  margin: 0;
-  padding: 0;
-  animation: mybackground infinite;
-  animation-duration: 15s;
-}
-
-@keyframes mybackground {
-  from {
-    background-color: aliceblue;
+/*Cellphone*/
+@media(max-width:912px){
+  .carousel-img{
+    left: 44px;
+    bottom:10px;
+    top: 20px;
   }
-  to {
-    background-color: black;
+  .carousel-subtitle{
+    transform: translateY(1700%);
   }
-}
-
-header {
-  width: 100%;
-  height: 80px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: #c1c7c3;
-  margin-bottom: 32px;
-  z-index: 5px;
-  padding-bottom: 12px;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0 24px 0 0;
-  display: flex;
-  gap: 32px;
-  font-size: 32px;
-  justify-content: flex-end;
-}
-
-nav a {
-  text-decoration: none;
-}
-
-h1 {
-  color: aliceblue;
-  text-align: center;
-  font-size: 45px;
-  animation: mycolor infinite;
-  animation-duration: 15s;
-}
-
-@keyframes mycolor {
-  from {
-    color: black;
+  .carousel-title{
+    transform: translateY(1700%);
   }
-  to {
-    color: aliceblue;
+
+  body{
+    text-align: center;
+    position: relative;
+  }
+
+  
+}
+
+/*tablets*/
+@media (max-width:770px) {
+  .carousel-img{
+    width: 350px;
+    margin: auto;
+    left: 40px;
+    
+  }
+  .carousel-subtitle{
+    transform: translateY(1100%);
+  }
+  .carousel-title{
+    transform: translateY(1200%);
+  }
+  
+  .carousel{
+    margin-top: 10px;
+    padding-top: 0;
+  }
+
+  body{
+    text-align: center;
+    
   }
 }
-
-.card {
-  list-style: none;
-  padding: 40px;
-  background-color: #75b6ef;
-  columns: #222;
-  text-align: center;
-  color: #543f09;
-  border-radius: 12px;
-  animation: backgroundfun infinite;
-  animation-duration: 15s;
-}
-
-@keyframes backgroundfun {
-  from {
-    background-color: #75b6ef;
-  }
-  to {
-    background-color: orange;
-  }
-}
-
-.card:hover {
-  background-color: orange;
-  cursor: pointer;
-}
-
-#pokedex {
-  padding-inline-start: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 3fr));
-  grid-gap: 20px;
-}
-
-.container {
-  padding: 40px;
-  margin: 0 auto;
-}
-
-.card-title {
-  text-transform: uppercase;
-  font-size: 24px;
-  font-weight: normal;
-  margin-bottom: 0;
-}
-
-.card-subtitle {
-  font-weight: lighter;
-  margin-top: 5px;
-}
-
-.card-img {
-  margin: 0 auto;
-  height: 180px;
-  width: 200px;
-} */
