@@ -45,9 +45,9 @@ nav a {
 .carousel {
   list-style: none;
   width: 75vw;
-  height: 75vh;
+  height: 80vh;
   margin: auto;
-  background-color: #75b6ef;
+  background-color: #c1c7c3;
   position: relative;
   text-align: center;
   color: #543f09;
@@ -59,6 +59,7 @@ nav a {
     inset: 0;
     opacity: 0;
 }
+
 
 .slide[data-active]{
     opacity: 1;
@@ -77,6 +78,7 @@ nav a {
   padding: 0 .5rem;
   background-color: rgba(0, 0, 0, 0.1);
   z-index: 100;
+  
 }
 
 .carousel-btn:hover,
@@ -96,11 +98,7 @@ nav a {
 .carousel-btn.next{
   right: 1rem;
 }
-.carousel-img {
-    margin: 0 auto;
-    height: 180px;
-    width: 200px;
-  }
+
 
 
   header > ul{
@@ -111,16 +109,54 @@ nav a {
 
 
 
-.carousel-title {
+.carousel-elements {
   text-transform: uppercase;
   font-size: 24px;
   font-weight: normal;
   margin-bottom: 0;
+  background-color: rgb(8, 8, 7);
+  position: relative;
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  top: 6%;
+  left: 30%;
+  border-radius: 12px;
 }
+
+.carousel-img {
+  margin: auto;
+  height: 400px;
+  width: 400px;
+  background-color: orange;
+  border-radius: 12px;
+  position: absolute;
+  top: 9%;
+  right: 9%;
+  animation: fadeIn 7s infinite ease-in-out;
+}
+
+@keyframes fadeIn {
+  0%{opacity:   0;}
+  25%{opacity: 0.2;}
+  25%{opacity: 0.3;}
+  50%{opacity: 0.5;}
+}
+
+.carousel-title {
+  font-weight: lighter;
+  margin-top: 5px;
+  font-size: 32px;
+  text-align: center;
+  transform: translateY(950%);
+} 
 
 .carousel-subtitle {
   font-weight: lighter;
   margin-top: 5px;
+  font-size: 32px;
+  text-align: center;
+  transform: translateY(900%);
 } 
 
 

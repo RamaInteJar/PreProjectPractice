@@ -10,8 +10,7 @@ body {
   font-family: "Yatra one";
   margin: 0;
   padding: 0;
-  animation: mybackground infinite;
-  animation-duration: 15s;
+  animation: mybackground 15s infinite;
 }
 
 @keyframes mybackground {
