@@ -17,7 +17,7 @@ header {
   left: 0;
   background: #c1c7c3;
   margin-bottom: 32px;
-  z-index: 5px;
+  z-index: 5;
   padding-bottom: 12px;
 }
 
@@ -137,43 +137,45 @@ nav a {
   transform: translateY(1090%);
 } 
 
-/*Cellphone*/
+/*tablets*/
 @media(max-width:912px){
   .carousel-img{
-    left: 44px;
+    left: 24px;
     bottom:10px;
     top: 20px;
   }
   .carousel-subtitle{
-    transform: translateY(1700%);
+    transform: translateY(970%);
   }
   .carousel-title{
-    transform: translateY(1700%);
+    transform: translateY(1060%);
   }
 
   body{
     text-align: center;
-    
+
   }
 
   
 }
 
-/*tablets*/
-@media (max-width:770px) {
+/*Cellphones portrait*/
+@media (max-width:390px) {
   .carousel-img{
-    width: 350px;
-    margin: auto;
-    left: 40px;
-    
+    right: 60%;
+    width: 200px;
+
   }
   .carousel-subtitle{
-    transform: translateY(1100%);
+    transform: translateY(900%);
+    
   }
   .carousel-title{
-    transform: translateY(1200%);
+    transform: translateY(1000%);
+ 
   }
 
+  
 
   .carousel-img{
     right: 30px;
@@ -182,5 +184,27 @@ nav a {
   body{
     text-align: center;
     
+  }
+
+  .carousel{
+    z-index: -20;
+  }
+}
+
+/*Cellphone landscape*/
+@media (max-width:844px) {
+  .carousel-img{
+    height:200px;
+    width: 300px;
+    right: 20px;
+  }
+  .carousel-subtitle{
+   font-size: 18px ;
+   transform: translateY(870%);
+  }
+
+  .carousel-title{
+    font-size: 18px;
+    transform: translateY(950%);
   }
 }
