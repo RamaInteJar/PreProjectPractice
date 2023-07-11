@@ -64,6 +64,7 @@ nav a {
 
 .slide[data-active]{
     opacity: 1;
+    list-style: none;
 }
 
 .carousel-btn{
@@ -125,7 +126,7 @@ nav a {
   margin-top: 5px;
   font-size: 32px;
   text-align: center;
-  transform: translateY(1140%);
+  transform: translateY(1100%);
   
 } 
 
@@ -134,7 +135,7 @@ nav a {
   margin-top: 5px;
   font-size: 32px;
   text-align: center;
-  transform: translateY(1090%);
+  transform: translateY(1000%);
 } 
 
 /*tablets*/
